@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to your pulic library</h1>
+      <h4>Kowledge is power</h4>
+      <button type="button" id="btn-open-dialog">Add book</button>
+    </div>
+
+    <dialog id="add-book-dialog">
+      <div class="container">
+        <form id="form-submit">
+          <div class="form-item">
+            <label>Title:</label> <input type="text" name="title" required />
+          </div>
+          <div>
+            <label>Author:</label>
+            <input type="text" name="author" required />
+          </div>
+          <div>
+            <label>Year:</label>
+            <input type="number" name="year" required />
+          </div>
+          <div>
+            <label>Number of pages:</label>
+            <input type="number" name="pages" required />
+          </div>
+          <div>
+            <label>Have you read this?:</label>
+            <input type="checkbox" name="hasRead" />
+          </div>
+          <button type="submit" id="btn-submit">submit</button>
+          <button typce="cancel" id="btn-cancel">cancel</button>
+        </form>
+      </div>
+    </dialog>
+
+    <div class="library-container">
+      <div id="library">
+        <div class="headers">
+          <div class="title-col"><h3>Title</h3></div>
+          <div class="author-col"><h3>Author</h3></div>
+          <div class="year-col"><h3>Year</h3></div>
+          <div class="pages-col"><h3>Pages</h3></div>
+          <div class="read-col"><h3>Has read?</h3></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
