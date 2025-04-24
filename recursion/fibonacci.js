@@ -34,8 +34,9 @@ const fibsRec = (number) => {
   return fibSequence;
 };
 
-const iterativeFibs = fibs(8); // [0, 1, 1, 2, 3, 5, 8, 13].
+const testValue = 8; // 8 => [0, 1, 1, 2, 3, 5, 8, 13].
+const iterativeFibs = fibs(testValue);
 console.log("Iterative fibs", iterativeFibs);
 
-const recursiveFibs = fibsRec(8);
+const recursiveFibs = fibsRec(testValue);
 console.log("Recursive fibs", recursiveFibs);
