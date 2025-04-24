@@ -1,0 +1,30 @@
+.gameboard-container,
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#gameboard {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+button {
+  width: 5em;
+  height: 5em;
+}
+
+#game-over-container {
+  text-align: center;
+  color: crimson;
+}
+
+.field-winner {
+  border: solid 3px crimson;
+}
+
+#reset-btn {
+  width: 10em;
+}
