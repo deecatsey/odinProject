@@ -1,6 +1,7 @@
 import "./styles.css";
 import { menuPage } from "./menu/menu";
 import { aboutPage } from "./about/about";
+import { homePage } from "./home/home";
 
 const initPage = () => {
   const contentEl = document.getElementById("content");
@@ -10,7 +11,7 @@ const initPage = () => {
   });
 
   const pageLookup = {
-    home: menuPage,
+    home: homePage,
     menu: menuPage,
     about: aboutPage,
   };
