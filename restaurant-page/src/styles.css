@@ -1,0 +1,22 @@
+body {
+  background-color: rebeccapurple;
+}
+
+#menu-items {
+  max-width: 50em;
+}
+
+.menu-category {
+  margin: 5em;
+}
+
+.menu-category-header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
