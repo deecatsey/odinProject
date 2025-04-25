@@ -109,7 +109,8 @@ const makeLinkedList = () => {
       const { nextNode } = node;
       node = nextNode;
       const { value } = node || { value: null };
-      values = values.concat(` -> ( ${value} )`);
+      const nodeValue = value ? `( ${value} )` : null;
+      values = values.concat(` -> ${nodeValue}`);
     }
     return values;
   };
